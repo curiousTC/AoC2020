@@ -15,7 +15,7 @@ def countTrees(map, right, down):
     while y < height:
         if map[y][x] == '#':
             numberOfTrees += 1
-        x = x + right
+        x += right
         y += down
     
     return numberOfTrees
