@@ -38,7 +38,7 @@ def main():
     val5 = countTrees(extended_map, 1, 2)
 
     product = val1 * val2 * val3 * val4 * val5
-    print(product)
+    print(f'Part 2: {product}')
 
 if __name__ == "__main__":
     main()
