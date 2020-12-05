@@ -47,7 +47,7 @@ def main():
     seatIds = getSeatIDPart1(boardingPass)
     print(f'Part 1 - Highest seat id: {max(seatIds)}')
     
-    for seat in range(min(seatIds), max(seatIds)+1):
+    for seat in range(min(seatIds), max(seatIds)):
         if seat not in seatIds:
             print(f'Part 2 - Seat id: {seat}')
 
