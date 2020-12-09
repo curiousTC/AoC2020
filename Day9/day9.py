@@ -22,7 +22,8 @@ def findEncryptionWeakness(inputList, target):
     for i in range(len(inputList)):
         for j in range(i, len(inputList)):
             subList = [int(v) for v in inputList[i:j]]
-
+            if sum(subList) > target:
+                break
             if sum(subList) == target: 
                 result = min(subList) + max(subList)
 
